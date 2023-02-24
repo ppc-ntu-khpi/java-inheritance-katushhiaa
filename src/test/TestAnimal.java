@@ -1,15 +1,32 @@
-package test;
+package test ;
 
-import domain.Cat;
+import domain.Kangaroo;
 
-public class TestAnimal {
 
-    public static void main(String[] args) {
-        Cat cat = new Cat("Thomas");
-        System.out.println(cat);
-        cat.hunt();
-        cat.eat();
-        cat.speak();
-        cat.play();
-    }
+ /**
+ * The class Test animal extends kangaroo
+ */ 
+public class TestAnimal extends Kangaroo
+{
+	
+
+/** 
+ *
+ * Main
+ *
+ * @param args  the args
+ */
+	public static void main(String[] args) { 
+
+            Kangaroo myKangaroo = new Kangaroo();
+            System.out.println(myKangaroo);
+            myKangaroo.speak();
+            myKangaroo.eat();
+            myKangaroo.run();
+            myKangaroo.sleep();
+            myKangaroo.jumpLong();
+            myKangaroo.swim();
+	}
+	
 }
+
